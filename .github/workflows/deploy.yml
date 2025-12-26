@@ -23,5 +23,5 @@ jobs:
         application_name: snake-game
         environment_name: snake-game-env
         region: ${{ secrets.AWS_REGION }}
-        version_label: ${{ github.sha }}
+        version_label: snake-${{ github.run_number }}
         deployment_package: app.zip
