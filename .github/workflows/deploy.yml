@@ -23,5 +23,5 @@ jobs:
         application_name: python-devops-app
         environment_name: python-devops-env
         region: ${{ secrets.AWS_REGION }}
-        version_label: ${{ github.sha }}
+        version_label: python-${{ github.run_number }}
         deployment_package: app.zip
